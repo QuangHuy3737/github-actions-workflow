@@ -20,7 +20,7 @@ jobs:
         id: buildx # id de su dung tai step khac
 
       - name: Cach Docker Image Layers
-        uses: action/cache@v2
+        uses: actions/cache@v2
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-buildx-${{ github.sha }} #de khoi phuc cache tu bo nho
