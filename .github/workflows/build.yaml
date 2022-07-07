@@ -1,0 +1,11 @@
+name : flask-helloworld
+on: 
+  push:
+    branches: [ master ]
+jobs: 
+  docker:
+    runs-on: unbutu-latest
+    steps:
+      - name: Checkout
+        users: actions/checkout@v2
+        
